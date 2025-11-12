@@ -14,6 +14,7 @@ import Brands from "./brands";
 import Services from "./services";
 import FAQS from "./faq";
 import { InfiniteMovingCardsDemo } from "./snippets/infinite-moving-card-snippet";
+import Footer from "@/components/footer";
 
 export default function Home() {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
@@ -56,7 +57,7 @@ export default function Home() {
   };
 
   return (
-    <div className="w-full md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
+    <div className="w-full md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative">
       <Navbar
         scrollToWebsiteDesign={scrollToWebsiteDesign}
         scrollToGraphicDesign={scrollToGraphicDesign}
@@ -102,6 +103,7 @@ export default function Home() {
         <InfiniteMovingCardsDemo />
         <FAQS />
       </div>
+      <Footer />
     </div>
   );
 }
