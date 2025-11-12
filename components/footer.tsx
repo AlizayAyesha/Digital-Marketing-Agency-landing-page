@@ -2,8 +2,15 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-gray-900 text-white py-8 px-4">
+    <footer className="w-full bg-gray-900 text-white py-16 px-4">
       <div className="max-w-6xl mx-auto">
+        <div className="bg-white text-black p-6 rounded-lg mb-12 text-center">
+          <h3 className="text-2xl font-bold mb-2">Have questions?</h3>
+          <p className="text-gray-600 mb-4">Get answers. We're here to help.</p>
+          <Link href="/contact" className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700">
+            Contact Us
+          </Link>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-xl font-bold mb-4">Digital Marketing Agency</h3>
@@ -29,7 +36,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="border-t border-neutral-700 mt-8 pt-8 text-center">
+        <div className="border-t border-neutral-700 mt-12 pt-8 text-center">
           <p className="text-neutral-400">&copy; 2024 Digital Marketing Agency. All rights reserved.</p>
         </div>
       </div>
